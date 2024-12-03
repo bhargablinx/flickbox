@@ -184,3 +184,25 @@ nav {
     font-weight: 700;
     font-size: 22px;
 }
+
+/* Tab Section */
+
+.tabs {
+    display: flex;
+    margin: 25px;
+    width: 50vw;
+    padding-left: 40px;
+}
+
+.tab {
+    margin: 0 15px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: white;
+    color: black;
+}
