@@ -59,6 +59,7 @@ table {
 :root {
     font-family: "Poppins";
     color: white;
+    background-color: black;
 }
 
 nav {
@@ -103,14 +104,13 @@ nav {
 /* Hero Section */
 
 .hero {
-    height: 100vh;
+    height: 80vh;
     background-image: url(https://w.wallhaven.cc/full/m3/wallhaven-m3j9v1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main {
-    /* background-color: cyan; */
     width: 35vw;
     margin: 20vh 150px;
 }
@@ -154,4 +154,33 @@ nav {
     color: white;
     background-color: rgba(112, 112, 112, 0.747);
     font-weight: 600;
+}
+
+/* Trending Movies Section */
+
+.trending {
+    margin: 25px 50px;
+}
+
+.card {
+    margin: 25px;
+    background-color: pink;
+    height: auto;
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1px solid #00f70d;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tr-title {
+    font-weight: 700;
+    font-size: 22px;
 }
