@@ -13,6 +13,14 @@ function App() {
                     for Minimalist
                 </p>
             </header>
+            <div className="text-center bg-[#393E41] text-[#F6F7EB] w-[300px] md:w-[500px] mx-auto my-10 flex items-center p-2 rounded-4xl gap-4 px-5">
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <input
+                    className="w-full outline-none border-none focus:ring-0 bg-transparent placeholder:text-[#F6F7EB]"
+                    type="text"
+                    placeholder="Search Movie Title..."
+                />
+            </div>
         </div>
     );
 }
