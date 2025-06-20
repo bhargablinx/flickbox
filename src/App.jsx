@@ -4,6 +4,9 @@ import SearchMovies from "./components/SearchMovies";
 import useFetch from "./hooks/useFetch";
 
 function App() {
+    const [query, setQuery] = useState("");
+    const [url, setUrl] = useState();
+
     return (
         <div className="h-screen">
             <header className="text-center mx-2 md:md-0 my-3">
@@ -23,11 +26,17 @@ function App() {
                 <input
                     className="w-full outline-none border-none focus:ring-0 bg-transparent placeholder:text-[#f6f7eb71]"
                     type="text"
+                    value={query}
                     placeholder="Search Movie Title..."
+                    onChange={(e) => {
+                        setQuery(e.target.value);
+                        setUrl(
+                            `https://www.omdbapi.com/?s=${query}&apikey=2801e3cd`
+                        );
+                    }}
                 />
             </div>
-            {/* <HeroSection /> */}
-            <SearchMovies />
+            {query === "" ? <HeroSection /> : <SearchMovies />}
         </div>
     );
 }
