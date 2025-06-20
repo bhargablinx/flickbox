@@ -1,3 +1,5 @@
+import HeroSection from "./components/HeroSection";
+
 function App() {
     return (
         <div className="h-screen">
@@ -5,7 +7,7 @@ function App() {
                 <p className="text-4xl font-extrabold tracking-[5px]">
                     Flickbox
                 </p>
-                <p className="text-[#393e41bf] mt-1">
+                <p className="text-[#393e41bf] m-4 md:mt-3">
                     Open Source{" "}
                     <span className="text-[#E94F37]">
                         Movie Tracking Website
@@ -21,6 +23,7 @@ function App() {
                     placeholder="Search Movie Title..."
                 />
             </div>
+            <HeroSection />
         </div>
     );
 }
