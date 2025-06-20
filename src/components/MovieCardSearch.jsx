@@ -5,14 +5,11 @@ export default function MovieCardSearch({
     director,
     runtime,
     rating,
+    poster,
 }) {
     return (
         <div className="p-2 h-[180px] rounded bg-[#e94f372f] transition flex gap-6">
-            <img
-                src="https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_SX300.jpg"
-                alt="movie-poster"
-                className="w-[150px]"
-            />
+            <img src={poster} alt="movie-poster" className="w-[150px]" />
             <div>
                 <p className="text-xl font-bold">
                     {title}{" "}

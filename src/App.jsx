@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import HeroSection from "./components/HeroSection";
 import SearchMovies from "./components/SearchMovies";
+import useFetch from "./hooks/useFetch";
 
 function App() {
     return (

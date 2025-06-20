@@ -16,6 +16,7 @@ export default function SearchMovies() {
                     director="Ridley Scott"
                     runtime="117 min"
                     rating="8.1"
+                    poster="https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_SX300.jpg"
                 />
             </div>
         </div>
